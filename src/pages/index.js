@@ -1,36 +1,20 @@
 import React from "react"
 
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Carousel from "../components/carousel/Carousel"
 
-import { makeStyles } from "@material-ui/styles"
+import "../style/style.css"
 
-const useStyles = makeStyles({
-  bannerImage: {
-    width: "100vw",
-  },
-})
+import img1 from "../data/images/sine banner 1.png"
+import img2 from "../data/images/sine banner 2.jpg"
+
 
 export default () => {
-  const classes = useStyles()
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "images/sine banner 1.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1800) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
-    <div>
-      <Img
-        className={classes.bannerImage}
-        fluid={data.file.childImageSharp.fluid}
-        alt="Sine banner 1"
-      />
+    <div style={{height: "100vh"}}>
+      <Carousel>
+        <img src={img1} />
+        <img src={img2} />
+      </Carousel>
     </div>
   )
 }
