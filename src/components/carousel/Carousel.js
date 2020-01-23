@@ -15,8 +15,9 @@ export const Carousel = props => {
     <div className={styles.carousel}>
       {props.children.map((child, idx) => (
         <div
+          key={idx}
           className={styles.carouselElement}
-          style={{ opacity: idx == current ? "0" : "1" }}
+          style={{ opacity: idx === current ? "0" : "1" }}
         >
           {child}
         </div>
