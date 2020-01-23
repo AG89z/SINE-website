@@ -60,6 +60,9 @@ body {
 
 .shop {
     margin: 50px;
+    display: flex;
+    flex-flow: column;
+      justify-content: center;
 }
 
 .shop-description {
@@ -69,6 +72,14 @@ body {
     max-width: 800px;
     text-align: center;
     margin: auto;
+}
+
+.shop-products-gallery {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: space-around;
 }
 
 

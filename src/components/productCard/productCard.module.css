@@ -1,0 +1,9 @@
+.productCard {
+    /* flex: 1; */
+    /* flex-shrink: 1; */
+    flex-grow: 1;
+    min-width: 200px;
+    width: 400px;
+    max-width: 300px;
+    margin: 20px;
+}

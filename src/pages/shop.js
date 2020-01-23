@@ -7,34 +7,16 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Modal from "../components/modal/Modal"
+import ProductCard from "../components/productCard/ProductCard"
 
-const ProductCard = ({ data }) => {
-  const { name, code, description, image } = data
+import "../style/style.css"
 
-  return (
-    <div style={{ maxWidth: "400px" }}>
-      <h3>{`${name} ${code}`}</h3>
-      <Img fluid={image.childImageSharp.fluid} />
-      <button
-        className="snipcart-add-item buyBtn"
-        data-item-id={code}
-        data-item-price={100}
-        data-item-image={image.childImageSharp.fluid.src}
-        data-item-name={name}
-        data-item-description={description}
-        data-item-url={"localhost:8000/shop"}
-      >
-        Buy
-      </button>
-    </div>
-  )
-}
 
 const ProductDialog = ({ product }) => {
   const { name, code, description, image, price } = product
 
   return (
-    <div style={{flex:"auto"}}>
+    <div style={{ flex: "auto" }}>
       <h3>{`${name} ${code}`}</h3>
       <Img fluid={image.childImageSharp.fluid} />
       <button
@@ -81,18 +63,13 @@ export default ({ data }) => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div>
-          {/* {data.allProductsYaml.edges.map(product => (
-            <ProductCard key={product.node.code} data={product.node} />
-          ))} */}
+        <div className="shop-products-gallery">
           {data.allProductsYaml.edges.map(product => (
-            <div
+            <ProductCard
               key={product.node.code}
-              style={{ maxWidth: "400px" }}
+              fluid={product.node.image.childImageSharp.fluid}
               onClick={() => setCurrentProduct(product.node)}
-            >
-              <Img fluid={product.node.image.childImageSharp.fluid} />
-            </div>
+            />
           ))}
         </div>
       </div>
@@ -114,6 +91,7 @@ export const query = graphql`
           code
           name
           description
+          price
           image {
             childImageSharp {
               fluid {
