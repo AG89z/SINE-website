@@ -1,6 +1,6 @@
 import React from "react"
 
-import { graphql, prefetchPathname } from "gatsby"
+import productsYaml from "../data/products/products.yaml"
 
 const ProductCard = ({ data }) => {
   const { name, code, description } = data
@@ -12,8 +12,8 @@ const ProductCard = ({ data }) => {
   )
 }
 
-export default ({ data }) => {
-  const products = data.allProductsYaml.edges
+export default () => {
+    console.log(productsYaml);
 
   return (
     <div className="shop">
@@ -29,24 +29,10 @@ export default ({ data }) => {
         </p>
       </div>
       <div>
-        {products.map(product => (
-          <ProductCard key={product.node.code} data={product.node} />
+        {productsYaml.map(product => (
+          <ProductCard key={product.code} data={product} />
         ))}
       </div>
     </div>
   )
 }
-
-export const pageQuery = graphql`
-  {
-    allProductsYaml {
-      edges {
-        node {
-          code
-          name
-          description
-        }
-      }
-    }
-  }
-`
