@@ -14,6 +14,12 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    `gatsby-transformer-remark`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/products`,
+      },
+    },
   ]
 }

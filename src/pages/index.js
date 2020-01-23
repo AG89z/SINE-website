@@ -7,7 +7,7 @@ import "../style/style.css"
 import img1 from "../data/images/sine banner 1.png"
 import img2 from "../data/images/sine banner 2.jpg"
 
-import logo from "../data/SINE logo.svg"
+import logo from "../data/images/SINE logo.svg"
 
 export default () => {
   return (

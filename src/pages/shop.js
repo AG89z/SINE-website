@@ -1,9 +1,19 @@
 import React from "react"
 
-import { graphql } from "gatsby"
+import { graphql, prefetchPathname } from "gatsby"
 
-export default props => {
-  const posts = props.data.allMarkdownRemark.edges
+const ProductCard = ({ data }) => {
+  const { name, code, description } = data
+  return (
+    <div>
+      <h3>{`${name} ${code}`}</h3>
+      <button>Buy</button>
+    </div>
+  )
+}
+
+export default ({ data }) => {
+  const products = data.allProductsYaml.edges
 
   return (
     <div className="shop">
@@ -18,34 +28,23 @@ export default props => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
+      <div>
+        {products.map(product => (
+          <ProductCard key={product.node.code} data={product.node} />
+        ))}
+      </div>
     </div>
   )
 }
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  {
+    allProductsYaml {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            path
-            image {
-              name
-              src
-            }
-          }
+          code
+          name
+          description
         }
       }
     }
