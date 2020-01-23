@@ -2,19 +2,22 @@ import React from "react"
 
 import Helmet from "react-helmet"
 
-import productsYaml from "../data/products/products.yaml"
+import { graphql } from "gatsby"
+
+import Img from "gatsby-image"
 
 const ProductCard = ({ data }) => {
-  const { name, code, description } = data
+  const { name, code, description, image } = data
 
   return (
-    <div>
+    <div style={{maxWidth:"400px"}}>
       <h3>{`${name} ${code}`}</h3>
+      <Img fluid={image.childImageSharp.fluid}/>
       <button
         className="snipcart-add-item buyBtn"
         data-item-id={code}
         data-item-price={100}
-        // data-item-image={image}
+        data-item-image={image.childImageSharp.fluid.src}
         data-item-name={name}
         data-item-description={description}
         data-item-url={"localhost:8000/shop"}
@@ -25,7 +28,7 @@ const ProductCard = ({ data }) => {
   )
 }
 
-export default () => {
+export default ({ data }) => {
   return (
     <>
       <Helmet>
@@ -53,11 +56,35 @@ export default () => {
           </p>
         </div>
         <div>
-          {productsYaml.map(product => (
-            <ProductCard key={product.code} data={product} />
+          {data.allProductsYaml.edges.map(product => (
+            <ProductCard
+              key={product.node.code}
+              data={product.node}
+            />
           ))}
         </div>
       </div>
     </>
   )
 }
+
+export const query = graphql`
+  {
+    allProductsYaml {
+      edges {
+        node {
+          code
+          name
+          description
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

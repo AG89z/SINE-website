@@ -11,15 +11,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/products`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `./src/data/products`,
+    //   },
+    // },
   ]
 }
