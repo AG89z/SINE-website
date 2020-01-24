@@ -13,15 +13,13 @@ export default () => {
   return (
     <>
       <div className="home-landing">
-        <Carousel>
-          <img alt="SINE studio 1" src={img1} />
-          <img alt="SINE studio 2" src={img2} />
-        </Carousel>
-      </div>
-      <div className="home-info">
         <div className="home-logo-area">
           <img id="logo" alt="SINE logo" src={logo} />
         </div>
+        <Carousel className="home-carousel">
+          <img className="home-carousel-img" alt="SINE studio 1" src={img1} />
+          <img className="home-carousel-img" alt="SINE studio 2" src={img2} />
+        </Carousel>
         <div className="home-links-area">
           <a href="shop">SHOP</a>
           <a href="/">BESPOKEN DESIGNS</a>

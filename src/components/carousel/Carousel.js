@@ -12,16 +12,18 @@ export const Carousel = props => {
   }, [current])
 
   return (
-    <div className={styles.carousel}>
-      {props.children.map((child, idx) => (
-        <div
-          key={idx}
-          className={styles.carouselElement}
-          style={{ opacity: idx === current ? "0" : "1" }}
-        >
-          {child}
-        </div>
-      ))}
+    <div className={props.className}>
+      <div className={styles.container}>
+        {props.children.map((child, idx) => (
+          <div
+            key={idx}
+            className={styles.carouselElement}
+            style={{ opacity: idx === current ? "0" : "1" }}
+          >
+            {child}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
