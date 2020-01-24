@@ -1,0 +1,47 @@
+@import "./global.css";
+
+.home-landing {
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.home-info {
+  height: 100vh;
+}
+
+.home-logo-area {
+  display: flex;
+}
+
+#logo {
+  width: 500px;
+  max-width: 30%;
+  min-width: 150px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.home-links-area {
+  min-height: 25%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-links-area a {
+  margin: 50px;
+  font-weight: lighter;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.home-links-area a:hover {
+  color: gray;
+}
+
+.home-links-area a:visited {
+  color: black;
+}

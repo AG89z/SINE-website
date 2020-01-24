@@ -1,0 +1,19 @@
+.container {
+  width: 800px;
+  max-width: 90vw;
+  background-color: white;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: lighter;
+  margin: 50px;
+}
+
+.image {
+  margin: 50px;
+}
+
+.buyButton {
+  margin: 50px;
+}

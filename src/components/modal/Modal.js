@@ -23,16 +23,20 @@ export default ({ open, onClose, children }) => {
 
   return (
     <div
-      id="modal"
       className={styles.modal}
       style={{
         display: open ? "block" : "none",
       }}
-      onClick={e => {
-        if (e.target.id == "modal") onClose()
-      }}
     >
-      <div className={styles.modalContent}>{children}</div>
+      <div
+        id="modal"
+        className={styles.content}
+        onClick={e => {
+          if (e.target.id == "modal") onClose()
+        }}
+      >
+        <div className={styles.children}>{children}</div>
+      </div>
     </div>
   )
 }

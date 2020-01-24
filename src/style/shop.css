@@ -1,0 +1,26 @@
+@import "global.css";
+
+.shop {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.shop-description {
+  flex: auto;
+  color: gray;
+  font-style: oblique;
+  line-height: 2em;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.shop-products-gallery {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: space-around;
+}

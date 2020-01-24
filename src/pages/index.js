@@ -2,7 +2,7 @@ import React from "react"
 
 import Carousel from "../components/carousel/Carousel"
 
-import "../style/style.css"
+import "../style/index.css"
 
 import img1 from "../data/images/sine banner 1.png"
 import img2 from "../data/images/sine banner 2.jpg"
