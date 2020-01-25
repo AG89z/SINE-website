@@ -1,0 +1,95 @@
+.header {
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.header img {
+  margin: auto;
+  height: 60px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 100%;
+  width: 0px;
+  max-width: 50%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.5s;
+  box-shadow: 1px 0px 10px gray;
+}
+
+.menu a {
+  display: block;
+  text-transform: uppercase;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: gray !important;
+}
+
+.menu a:visited {
+  color: black;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+}
+
+.footer > * {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.links {
+  display: flex;
+  flex-flow: column;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+.links a {
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: dimgray;
+}
+
+.links a:hover {
+  color: gray !important;
+}
+
+.links a:visited {
+  color: dimgray;
+}
+
+.copyright {
+  color: lightgrey;
+}

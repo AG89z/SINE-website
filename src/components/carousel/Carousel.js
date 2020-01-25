@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react"
 
 import styles from "../carousel/carousel.module.css"
 
-export const Carousel = props => {
+export const Carousel = ({children, className}) => {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
-    const next = (current + 1) % props.children.length
+    const next = (current + 1) % children.length
     const id = setTimeout(() => setCurrent(next), 5000)
     return () => clearTimeout(id)
   }, [current])
 
   return (
-    <div className={props.className}>
+    <div className={className}>
       <div className={styles.container}>
-        {props.children.map((child, idx) => (
+        {children.map((child, idx) => (
           <div
             key={idx}
             className={styles.carouselElement}
