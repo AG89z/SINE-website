@@ -22,8 +22,8 @@ export default () => {
         </Carousel>
         <div className="home-links-area">
           <a href="shop">SHOP</a>
-          <a href="/">BESPOKEN DESIGNS</a>
-          <a href="/">ABOUT</a>
+          <a href="/bespoken">BESPOKEN DESIGNS</a>
+          <a href="/about">ABOUT</a>
         </div>
       </div>
     </>

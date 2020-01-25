@@ -40,6 +40,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2em;
+  color: black;
 }
 
 .home-links-area a:hover {
@@ -47,5 +48,5 @@
 }
 
 .home-links-area a:visited {
-  color: black;
+  color: black !important;
 }

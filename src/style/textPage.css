@@ -1,0 +1,19 @@
+@import "global.css";
+
+.container {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.content h1 {
+    margin-bottom: 50px;
+}
