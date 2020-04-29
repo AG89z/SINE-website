@@ -4,136 +4,190 @@
     Name: Modulation_01
     Dimensions (resizable): 1000 x 1000 x 20 mm
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './000/Thumbnail.jpg'
   images:
     - './000/Thumbnail.jpg'
     - './000/Scene_front.jpg'
     - './000/Scene_top.jpg'
     - './000/Side_view.jpg'
+
+
 - code: '001'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './001/Thumbnail.jpg'
   images:
     - './001/Thumbnail.jpg'
     - './001/Scene_front.jpg'
     - './001/Scene_top.jpg'
     - './001/Side_view.jpg'
+
+
 - code: '002'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './002/Thumbnail.jpg'
   images:
     - './002/Thumbnail.jpg'
     - './002/Scene_front.jpg'
     - './002/Scene_top.jpg'
     - './002/Side_view.jpg'
+
+
 - code: '003'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './003/Thumbnail.jpg'
   images:
     - './003/Thumbnail.jpg'
     - './003/Scene_front.jpg'
     - './003/Scene_top.jpg'
     - './003/Side_view.jpg'
+
+
 - code: '004'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './004/Thumbnail.jpg'
   images:
     - './004/Thumbnail.jpg'
     - './004/Scene_front.jpg'
     - './004/Scene_top.jpg'
     - './004/Side_view.jpg'
+
+
 - code: '005'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './005/Thumbnail.jpg'
   images:
     - './005/Thumbnail.jpg'
     - './005/Scene_front.jpg'
     - './005/Scene_top.jpg'
     - './005/Side_view.jpg'
+
+
 - code: '006'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './006/Thumbnail.jpg'
   images:
     - './006/Thumbnail.jpg'
     - './006/Scene_front.jpg'
     - './006/Scene_top.jpg'
     - './006/Side_view.jpg'
+
+
 - code: '007'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './007/Thumbnail.jpg'
   images:
     - './007/Thumbnail.jpg'
     - './007/Scene_front.jpg'
     - './007/Scene_top.jpg'
     - './007/Side_view.jpg'
+
+
 - code: '008'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './008/Thumbnail.jpg'
   images:
     - './008/Thumbnail.jpg'
     - './008/Scene_front.jpg'
     - './008/Scene_top.jpg'
     - './008/Side_view.jpg'
+
+
 - code: '009'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './009/Thumbnail.jpg'
   images:
     - './009/Thumbnail.jpg'
     - './009/Scene_front.jpg'
     - './009/Scene_top.jpg'
     - './009/Side_view.jpg'
+
+
 - code: '010'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './010/Thumbnail.jpg'
   images:
     - './010/Thumbnail.jpg'
     - './010/Scene_front.jpg'
     - './010/Scene_top.jpg'
     - './010/Side_view.jpg'
+
+
 - code: '011'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './011/Thumbnail.jpg'
   images:
     - './011/Thumbnail.jpg'
     - './011/Scene_front.jpg'
     - './011/Scene_top.jpg'
     - './011/Side_view.jpg'
+
+
 - code: '012'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './012/Thumbnail.jpg'
   images:
     - './012/Thumbnail.jpg'
     - './012/Scene_front.jpg'
     - './012/Scene_top.jpg'
     - './012/Side_view.jpg'
+
+
 - code: '013'
   name: Parametric wall panel
   description: Another exceptional piece of art
   price: 100
+  formats: "'.svg', 'obj'"
+  dimensions: "1000 x 1000 x 20 mm"
   thumbnail: './013/Thumbnail.jpg'
   images:
     - './013/Thumbnail.jpg'

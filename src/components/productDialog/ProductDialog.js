@@ -5,7 +5,16 @@ import Img from "gatsby-image"
 import styles from "./productDialog.module.css"
 
 export default ({ product }) => {
-  const { name, code, description, thumbnail, images, price } = product
+  const {
+    name,
+    code,
+    description,
+    thumbnail,
+    images,
+    price,
+    formats,
+    dimensions,
+  } = product
 
   const [imgFluid, setImgFluid] = useState(thumbnail.childImageSharp.fluid)
 
@@ -14,9 +23,9 @@ export default ({ product }) => {
       <h3 className={styles.title}>{`${name} ${code}`}</h3>
       <div className={styles.checkout}>
         <div className={styles.description}>
-          <p>{`Name: ${name}`}</p>
-          <p>{`Code: ${code}`}</p>
-          <p>{`Price: ${price} EUR`}</p>
+          <p>{`Dimensions (resizable): ${dimensions}`}</p>
+          <p>{`Download formats: ${formats}`}</p>
+          <p className={styles.price}>{`Price: ${price} EUR`}</p>
         </div>
         <button
           className={`${styles.buyButton} snipcart-add-item buyBtn`}
