@@ -4,9 +4,12 @@ import Carousel from "../components/carousel/Carousel"
 
 import "../style/index.css"
 
+// @ts-ignore
 import img1 from "../data/images/sine banner 1.png"
+// @ts-ignore
 import img2 from "../data/images/sine banner 2.jpg"
 
+// @ts-ignore
 import logo from "../data/images/SINE logo.svg"
 
 export default () => {

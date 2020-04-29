@@ -2,8 +2,10 @@ import React from "react"
 
 import Helmet from "react-helmet"
 
+// @ts-ignore
 import logo from "../../data/images/SINE logo.svg"
 
+// @ts-ignore
 import styles from "./layout.module.css"
 
 const Menu = ({ open, onClose, children }) => {

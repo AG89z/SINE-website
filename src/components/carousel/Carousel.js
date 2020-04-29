@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react"
 
+// @ts-ignore
 import styles from "../carousel/carousel.module.css"
 
-export const Carousel = ({children, className}) => {
+/**
+ * @param {{children: any, className?: string}} param0
+ */
+export const Carousel = ({ children, className }) => {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {

@@ -1,5 +1,6 @@
 import React from "react"
 
+// @ts-ignore
 import styles from "./modal.module.css"
 
 export default ({ open, onClose, children }) => {
@@ -32,7 +33,7 @@ export default ({ open, onClose, children }) => {
         id="modal"
         className={styles.content}
         onClick={e => {
-          if (e.target.id == "modal") onClose()
+          if (e.target["id"] == "modal") onClose()
         }}
       >
         <div className={styles.children}>{children}</div>

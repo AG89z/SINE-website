@@ -45,7 +45,7 @@ export default ({ data }) => {
             {data.allProductsYaml.edges.map(product => (
               <ProductCard
                 key={product.node.code}
-                fluid={product.node.image.childImageSharp.fluid}
+                fluid={product.node.thumbnail.childImageSharp.fluid}
                 onClick={() => setCurrentProduct(product.node)}
               />
             ))}
@@ -71,7 +71,14 @@ export const query = graphql`
           name
           description
           price
-          image {
+          thumbnail {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          images {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
