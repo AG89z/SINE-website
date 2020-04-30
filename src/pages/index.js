@@ -4,15 +4,13 @@ import Carousel from "../components/carousel/Carousel"
 
 import "../style/index.css"
 
-// @ts-ignore
-import img1 from "../data/images/sine banner 1.png"
-// @ts-ignore
-import img2 from "../data/images/sine banner 2.jpg"
+import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 // @ts-ignore
 import logo from "../data/images/SINE logo.svg"
 
-export default () => {
+export default ({ data }) => {
   return (
     <>
       <div className="home-landing">
@@ -20,8 +18,16 @@ export default () => {
           <img id="logo" alt="SINE logo" src={logo} />
         </div>
         <Carousel className="home-carousel">
-          <img className="home-carousel-img" alt="SINE studio 1" src={img1} />
-          <img className="home-carousel-img" alt="SINE studio 2" src={img2} />
+          <Img
+            fluid={data.banner1.childImageSharp.fluid}
+            alt="SINE studio 1"
+            className="home-carousel-img"
+          />
+          <Img
+            fluid={data.banner2.childImageSharp.fluid}
+            alt="SINE studio 1"
+            className="home-carousel-img"
+          />
         </Carousel>
         <div className="home-links-area">
           <a href="shop">SHOP</a>
@@ -32,3 +38,22 @@ export default () => {
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    banner1: file(relativePath: { eq: "images/sine banner 1.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    banner2: file(relativePath: { eq: "images/sine banner 2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
