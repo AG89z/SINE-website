@@ -20,7 +20,7 @@ export default ({ product }) => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>{`${name} ${code}`}</h3>
+      <h3 className={styles.title}>{name}</h3>
       <div className={styles.checkout}>
         <div className={styles.description}>
           <p>{`Dimensions (resizable): ${dimensions}`}</p>
