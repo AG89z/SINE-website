@@ -1,0 +1,6 @@
+.image {
+  width: 400px;
+  max-width: 80%;
+  margin-top: 48px;
+  filter: grayscale();
+}

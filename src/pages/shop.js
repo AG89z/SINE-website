@@ -17,23 +17,23 @@ export default ({ data }) => {
   return (
     <>
       <Helmet>
-        <script src="https://cdn.snipcart.com/themes/v3.0.6/default/snipcart.js"></script>
+        <script src="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js"></script>
         <link
           rel="stylesheet"
-          href="https://cdn.snipcart.com/themes/v3.0.6/default/snipcart.css"
+          href="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.css"
         />
       </Helmet>
       <Layout>
         <div
           id="snipcart"
-          data-api-key="YjBkYjJlMTgtNGQzMS00YmMwLTkwMGMtMzI2MGJlODY2ZThlNjM3MTUzNzI0MTQ0NzQwNTg4"
+          data-api-key={process.env.GATSBY_SNIPCART_API_KEY}
           hidden
         ></div>
         <div className="shop">
           <div className="shop-description">
             <p>
               A collection of parametric wall panels and decors. Each model is
-              available in digital download for CNC manufacturing. 
+              available in digital download for CNC manufacturing.
             </p>
           </div>
           <div className="shop-products-gallery">
