@@ -31,6 +31,7 @@ export default ({ data }) => {
         ></div>
         <div className="shop">
           <div className="shop-description">
+            <h1>Shop</h1>
             <p>
               A collection of parametric wall panels and decors. Each model is
               available in digital download for CNC manufacturing.

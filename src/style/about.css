@@ -1,6 +1,19 @@
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .image {
-  width: 400px;
-  max-width: 80%;
-  margin-top: 48px;
+  margin: auto;
+  width: 300px;
+  max-width: 100%;
   filter: grayscale();
+}
+
+.bio-text {
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 24px;
+  width: 400px;
 }

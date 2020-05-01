@@ -18,6 +18,12 @@
   margin: auto;
 }
 
+.shop-description h1 {
+  color: black;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
 .shop-products-gallery {
   flex: auto;
   display: flex;

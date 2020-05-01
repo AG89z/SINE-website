@@ -46,10 +46,7 @@ const AllLinks = () => (
   <>
     <a href="/">Home</a>
     <a href="/shop">Shop</a>
-    <a href="/bespoken">
-      Bespoken <br />
-      designs
-    </a>
+    <a href="/bespoken">Bespoken designs</a>
     <a href="/about">About</a>
   </>
 )
